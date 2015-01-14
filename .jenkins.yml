@@ -1,0 +1,6 @@
+container: aozora0000/jenkins-ci-ruby:latest
+steps:
+    - name: bundleインストール
+      code: bundle install
+    - name: test実行
+      code: bundle exec ruby -v test/test_*.rb
